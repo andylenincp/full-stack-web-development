@@ -1,0 +1,19 @@
+{
+  "name": "hotel-guide",
+  "version": "1.0.0",
+  "description": "Proyecto node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andylenincp/hotel-guide.git"
+  },
+  "author": "Andy Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andylenincp/hotel-guide/issues"
+  },
+  "homepage": "https://github.com/andylenincp/hotel-guide#readme"
+}
