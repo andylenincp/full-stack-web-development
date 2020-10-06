@@ -1,138 +1,183 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/main.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hotel Guide</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
 
-    <div class="jumbotron"><h1>Guía de Hoteles</h1></div>
+  <title>Hotel Guide</title>
+</head>
 
-    <div class="container">
-      <div class="d-flex">
-        <div class="col-sm-4">
-          <h3>¿Cómo funciona?</h3>
-          <p>Buscador de hoteles de acuerdo a tus preferencias.</p>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Guía Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Términos y condiciones</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1>Guía de Hoteles</h1>
+  </div>
+
+  <div class="container">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>¿Cómo funciona?</h3>
+        <p>Buscador de hoteles de acuerdo a tus preferencias.</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>¿Dónde puedo reservar?</h3>
+        <p>Realiza la búsqueda de tu sitio favorito y reserva con tus datos para mayor comodidad.</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>¿Cómo puedo pagar?</h3>
+        <p>Luego de realizada la reserva elige tu método de pago preferido.</p>
+      </div>
+    </div><br>
+    <div class="d-flex flex-wrap">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Poseidón</h4>
+          <p>El Hotel Poseidon está muy bien situado en Manta, a unos pasos de la playa.</p>
         </div>
-        <div class="col-sm-4">
-          <h3>¿Dónde puedo reservar?</h3>
-          <p>Realiza la búsqueda de tu sitio favorito y reserva con tus datos para mayor comodidad.</p>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
         </div>
-        <div class="col-sm-4">
-          <h3>¿Cómo puedo pagar?</h3>
-          <p>Luego de realizada la reserva elige tu método de pago preferido.</p>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>MantaHost</h4>
+          <p>El MantaHost Hotel está situado frente al océano, a solo 4 km de la ciudad de Manta, y ofrece alojamiento
+            con balcón y vistas al océano Pacífico. Tiene piscina al aire libre.</p>
         </div>
-      </div><br>
-      <div class="d-flex flex-wrap">
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>Poseidón</h4>
-            <p>El Hotel Poseidon está muy bien situado en Manta, a unos pasos de la playa.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>MantaHost</h4>
-            <p>El MantaHost Hotel está situado frente al océano, a solo 4 km de la ciudad de Manta, y ofrece alojamiento con balcón y vistas al océano Pacífico. Tiene piscina al aire libre.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>OroVerde</h4>
+          <p>El Hotel Oro Verde, que está situado a solo 2 km del aeropuerto Eloy Alfaro, goza de una magnífica
+            ubicación frente al océano Pacífico y ofrece habitaciones elegantes con WiFi gratuita y balcón con vista al
+            mar.</p>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>OroVerde</h4>
-            <p>El Hotel Oro Verde, que está situado a solo 2 km del aeropuerto Eloy Alfaro, goza de una magnífica ubicación frente al océano Pacífico y ofrece habitaciones elegantes con WiFi gratuita y balcón con vista al mar.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>Balandra</h4>
-            <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Balandra</h4>
+          <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la
+            playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>Balandra</h4>
-            <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>Balandra</h4>
-            <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Balandra</h4>
+          <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la
+            playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>Balandra</h4>
-            <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
         </div>
-        <div class="card-hotel d-flex flex-column justify-content-between">
-          <div>
-            <h4>Balandra</h4>
-            <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la playa y alojamiento en habitaciones.</p>
-          </div>
-          <div>
-            <a href="" class="btn btn-success btn-reserva">Reservar</a>
-          </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Balandra</h4>
+          <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la
+            playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
+        </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Balandra</h4>
+          <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la
+            playa y alojamiento en habitaciones y bungalows con vistas al jardín.</p>
+        </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
+        </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+        <div>
+          <h4>Balandra</h4>
+          <p>El Balandra se encuentra en Manta y ofrece piscina al aire libre, restaurante con vistas panorámicas a la
+            playa y alojamiento en habitaciones.</p>
+        </div>
+        <div>
+          <a href="" class="btn btn-success btn-reserva">Reservar</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="footer">
-      <div class="row">
-        <div class="col-sm-4 d-flex flex-column">
-          <a href="https://www.facebook.com/">Facebook</a>
-          <a href="https://www.twitter.com/">Twitter</a>
-          <a href="https://www.instagram.com/">Instagram</a>
-        </div>
-        <div class="col-sm-4 d-flex flex-column">
-          <address>
-            <h3>Oficina Central</h3>
-            <p>Montecristi, calle Rocafuerte en acceso a Paseo Lúdico</p>
-            <p>+593996190948</p>
-            <p>contact@hotelguide.com</p>
-          </address>
-        </div>
-        <div class="col-sm-4 d-flex flex-column">
-          <a href="https://www.facebook.com/">Nosotros</a>
-          <a href="https://www.twitter.com/">Precios</a>
-          <a href="https://www.instagram.com/">Términos y condiciones</a>
-        </div>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.twitter.com/">Twitter</a>
+        <a href="https://www.instagram.com/">Instagram</a>
       </div>
-    </footer>
+      <div class="col-sm-4 d-flex flex-column">
+        <address>
+          <h3>Oficina Central</h3>
+          <p>Montecristi, calle Rocafuerte en acceso a Paseo Lúdico</p>
+          <p>+593996190948</p>
+          <p>contact@hotelguide.com</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="https://www.facebook.com/">Nosotros</a>
+        <a href="https://www.twitter.com/">Precios</a>
+        <a href="https://www.instagram.com/">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
