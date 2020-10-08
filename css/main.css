@@ -5,7 +5,7 @@
 }
 
 .footer {
-    padding: 10px 10px 0 10px;
+    padding: 20px 10px 0 10px;
     background-color: yellow;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -19,4 +19,8 @@
 
 .btn-reserva {
     width: 100%;
+}
+
+.footer-address-icon {
+    padding-right: 10px;
 }
