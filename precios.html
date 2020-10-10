@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
   <title>Hotel Guide</title>
 </head>
@@ -30,13 +31,13 @@
         <li class="nav-item">
           <a class="nav-link" href="/about.html">Nosotros <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="/precios.html">Precios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Términos y condiciones</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/contact.html">Contacto</a>
         </li>
       </ul>
@@ -52,54 +53,79 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item" aria-current="page"><a href="/">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
       </ol>
     </nav>
-
-    <h1>Déjanos tus comentarios</h1>
-
-    <form action="">
-      <div class="form-row">
-        <div class="form-group col-sm-6">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="" id="nombre" class="form-control" placeholder="Ingrese su nombre">
-        </div>
-        <div class="form-group col-sm-6">
-          <label for="apellido">Apellido</label>
-          <input type="text" name="" id="apellido" class="form-control" placeholder="Ingrese su apellido">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" name="" id="email" class="form-control" placeholder="Ingrese su email">
-      </div>
-      <div class="form-row">
-        <div class="form-group col-sm-9">
-          <label for="domicilio">Domicilio</label>
-          <input type="text" name="" id="domicilio" class="form-control" placeholder="Ingrese su domicilio">
-        </div>
-        <div class="form-group col-sm-3">
-          <label for="provincia">Provincia</label>
-          <select name="" id="provincia" class="form-control">
-            <option value="" selected>Manabí</option>
-            <option value="">Guayas</option>
-            <option value="">Esmeraldas</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="comentario">Comentario</label>
-        <textarea name="" id="comentario" cols="30" rows="5" class="form-control"></textarea>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input type="checkbox" name="" id="gridCheck" class="form-check-input">
-          <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Calidad</th>
+            <th scope="col">Oro Verde</th>
+            <th scope="col">Sail Plaza</th>
+            <th scope="col">Spondylus</th>
+            <th scope="col">Balandra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <span class="oi oi-star"></span>
+            </th>
+            <td>$150</td>
+            <td>$175</td>
+            <td>$200</td>
+            <td>$225</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+            </th>
+            <td>$150</td>
+            <td>$175</td>
+            <td>$200</td>
+            <td>$225</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+            </th>
+            <td>$150</td>
+            <td>$175</td>
+            <td>$200</td>
+            <td>$225</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+            </th>
+            <td>$150</td>
+            <td>$175</td>
+            <td>$200</td>
+            <td>$225</td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+              <span class="oi oi-star"></span>
+            </th>
+            <td>$150</td>
+            <td>$175</td>
+            <td>$200</td>
+            <td>$225</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <footer class="footer">
@@ -112,7 +138,8 @@
       <div class="col-sm-4 d-flex flex-column">
         <address>
           <h3>Oficina Central</h3>
-          <p><span class="oi oi-home footer-address-icon"></span>Montecristi, calle Rocafuerte en acceso a Paseo Lúdico</p>
+          <p><span class="oi oi-home footer-address-icon"></span>Montecristi, calle Rocafuerte en acceso a Paseo Lúdico
+          </p>
           <p><span class="oi oi-phone footer-address-icon"></span>+593996190948</p>
           <p><span class="oi oi-inbox footer-address-icon"></span>contact@hotelguide.com</p>
         </address>
