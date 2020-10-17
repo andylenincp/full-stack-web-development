@@ -90,7 +90,8 @@
       <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
         <img class="card-img-top" src="/images/oroverde.jpg" alt="">
         <div class="card-body">
-          <h4 class="card-title">Oro Verde</h4>
+          <h4 class="card-title" data-toggle="tooltip" data-placement="top"
+            title="Las primeras reservas 10% de descuento!">Oro Verde</h4>
           <h6 class="card-subtitle text-muted">Manta</h6>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit mauris duis natoque posuere, curae
             fusce blandit netus lectus metus erat pellentesque varius suscipit gravida placerat, aliquam viverra
@@ -180,16 +181,18 @@
             fusce blandit netus lectus metus erat pellentesque varius suscipit gravida placerat, aliquam viverra
             ullamcorper risus bibendum sapien ac potenti phasellus suspendisse. Lacus massa senectus iaculis sed egestas
             mi morbi tincidunt, himenaeos dictumst sodales id vulputate vitae orci.</p>
-            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contacto">Contacto</button>
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
         </div>
         <div>
-          <a href="" class="btn btn-success btn-reserva">Reservar</a>
+          <a class="btn btn-success btn-reserva" data-toggle="popover" title="Importante" data-content="Consulta las promociones">Reservar</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -245,8 +248,14 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 </body>
 
 </html>
