@@ -275,7 +275,7 @@
   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
     $(function () {
-      
+
       $('[data-toggle="tooltip"]').tooltip()
       $('[data-toggle="popover"]').popover()
       $('.carousel').carousel({
@@ -303,6 +303,8 @@
         console.log('El modal contacto se ocultó');
 
         $('#contactoBtn').prop('disabled', false);
+        $('#contactoBtn').removeClass('btn-success');
+        $('#contactoBtn').addClass('btn-outline-primary');
 
       });
 
