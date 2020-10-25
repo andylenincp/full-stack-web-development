@@ -14,29 +14,29 @@ $black: #000000;
 .jumbotron {
     background-color: $yellow;
     color: $black;
-    @include margenes(50px, 25px)
+    @include margenes(50px, 25px);
 }
 
 .footer {
     padding: 20px 10px 0 10px;
     background-color: $yellow;
-    @include margenes(10px, 0px)
+    @include margenes(10px, 0px);
 }
 
 .card-hotel {
     flex: 1 250px;
-    @include margenes(10px, 0px)
+    @include margenes(10px, 0px);
 }
 
 .btn-reserva {
     width: 100%;
-    border-radius: 0px;;
+    border-radius: 0px;
 }
 
 .footer-address-icon {
-    @include relleno(10px, 0px)
+    @include relleno(10px, 0px);
 }
 
 .tab-content {
-    @include relleno(0px, 10px)
+    @include relleno(0px, 10px);
 }
